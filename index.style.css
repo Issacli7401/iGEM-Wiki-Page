@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family:"Roboto", sans-serif;
+}
+
+/* Navigation */
+
+.nav-container {
+    height: 166px;
+    
+    background: #FFFBF5;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+}
+
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 166px;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav .logo {
+    position: absolute;
+    width: 189px;
+    height: 144px;
+    left: 50px;
+    top: 11px;
+}
+
+.nav-items li {
+    list-style: none;
+    margin-right: 100px;
+    float: left;
+}
+
+.nav-items li:nth-last-of-type(1) {
+    margin: 0;
+}
+
+.nav-items li a {
+    color: #000000;
+    font-size: 24px;
+    font-weight: 900;
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+}
+
+nav .igem-logo {
+    position: absolute;
+    width: 141px;
+    height: 110px;
+    left: 1480px;
+    top: 28px;
+}
+
+/* Header */
+
+.header-container {
+    background: #EAE0DA url('img/T--St_Andrews--polygon.svg');
+    background-repeat: no-repeat;
+    background-position: right;
+    max-width: 1750px;
+    height: 800px;
+    display: flex;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+
+header .hero-header {
+    position: absolute;
+    font-weight: 900;
+    font-size: 96px;
+    line-height: 112px;
+    color: #050505;
+    margin-bottom: 24px;
+
+    position: absolute;
+    top: 54%;
+    left: 54%;
+    transform: translate(-50%, -50%);
+}
+
+header .hero-paragraph {
+    position: absolute;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 42px;
+    color: #050505;
+    width: 600px;
+
+    position: absolute;
+    top: 69%;
+    left: 58%;
+    transform: translate(-50%, -50%);
+}
+
+/* Hero Image */
+header .hero-image {
+    position: absolute;
+    width: 868px;
+    height: 773.11px;
+    left: 57px;
+    top: 157px;
+
+
+    padding: 50px;
+    transition: transform .3s; /* Animation */
+    margin: 0 auto;
+}
+
+header .hero-image:hover {
+    transform: scale(1.05);
+}
+
+
+/* Social Icons */
+
+.social-icons {
+    display: flex;
+    align-items: center
+}
+
+.social-icons a:nth-of-type(1) {
+    position: absolute;
+    width: 86px;
+    height: 86px;
+    left: 1396px;
+    top: 796px;
+}
+
+.social-icons a:nth-of-type(2) {
+    position: absolute;
+    width: 86px;
+    height: 86px;
+    left: 1296px;
+    top: 796px;
+}
+
+.social-icons a:nth-of-type(3) {
+    position: absolute;
+    width: 86px;
+    height: 86px;
+    left:1496px;
+    top: 796px;
+}
+
+/* Bacteria Bubble */
+
+.bacteria-bubble {
+    background-color: transparent;
+    position: absolute;
+    width: 330px;
+    height: 330px;
+    border-radius: 50%;
+    perspective: 1000px;
+    left: 947px;
+    top: 200px;
+
+    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.3);
+}
+
+.flip-bacteria-bubble-inner {
+    position: relative;
+    width: 100%;
+    height:100%;
+    text-align: center;
+    transition: transform 250ms linear;
+    transform-style: preserve-3d;
+}
+
+.bacteria-bubble:hover .flip-bacteria-bubble-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-bacteria-bubble-front, .flip-batteria-bubble-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+}
+
+.flip-bacteria-bubble-back {
+    background-color: rgb(255, 241, 209);
+    color: black;
+    width: 330px;
+    height: 330px;
+    border-radius: 50%;
+    transform: rotateY(180deg);
+}
+
+/* Sunscreen Bubble */
+
+.sunscreen-bubble {
+    background-color: transparent;
+    position: absolute;
+    width: 330px;
+    height: 330px;
+    border-radius: 50%;
+    perspective: 1000px;
+    left: 1245px;
+    top: 367px; 
+
+    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.3);
+}
+
+.flip-sunscreen-bubble-inner {
+    position: relative;
+    width: 100%;
+    height:100%;
+    text-align: center;
+    transition: transform 250ms linear;
+    transform-style: preserve-3d;
+}
+
+.sunscreen-bubble:hover .flip-sunscreen-bubble-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-sunscreen-bubble-front, .flip-sunscreen-bubble-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+}
+
+.flip-sunscreen-bubble-back {
+    background-color: rgb(255, 241, 209);
+    color: black;
+    width: 330px;
+    height: 330px;
+    border-radius: 50%;
+    transform: rotateY(180deg);
+}
+
+/* Coral Bubble */
+
+.coral-bubble {
+    background-color: transparent;
+    position: absolute;
+    width: 330px;
+    height: 330px;
+    border-radius: 50%;
+    perspective: 1000px;
+    left: 947px;
+    top: 572px;
+
+    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.3);
+}
+
+.flip-coral-bubble-inner {
+    position: relative;
+    width: 100%;
+    height:100%;
+    text-align: center;
+    transition: transform 250ms linear;
+    transform-style: preserve-3d;
+}
+
+.coral-bubble:hover .flip-coral-bubble-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-coral-bubble-front, .flip-coral-bubble-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+}
+
+.flip-coral-bubble-back {
+    background-color: rgb(255, 241, 209);
+    color: black;
+    width: 330px;
+    height: 330px;
+    border-radius: 50%;
+    transform: rotateY(180deg);
+}
+
+
+
+    
+
+    
+    
+    
+
+
+

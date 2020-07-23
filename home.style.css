@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(180deg, #EAE0DA 0%, rgba(255, 255, 255, 0) 82.81%, rgba(253, 252, 252, 0.091954) 99.99%, rgba(255, 255, 255, 0.00574713) 100%), #FFC8AC;
+    background-position: center;
+    width: auto;
+    height: 5600px;
+    font-family: "Roboto", sans-serif;
+    background-repeat: no-repeat;
+}
+
+.menu-bar {
+    background: #FFF8ED;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    text-align: center;
+}
+
+.menu-bar ul {
+    display: inline-flex;
+    list-style: none;
+    color: #000000;
+}
+
+.menu-bar ul li {
+    width: 180px;
+    margin: 21px;
+    padding: 15px;
+}
+
+.menu-bar ul li a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.menu-bar ul li:hover {
+    background: #FFC8AC;
+    border-radius: 20px;
+}
+
+.menu-bar .fa {
+    margin-right: 8px;
+}
+
+.sub-menu-project, .sub-menu-team, .sub-menu-parts, .sub-menu-humanpractices {
+    display: none;
+}
+
+.menu-bar ul li:hover .sub-menu-project {
+    display: block;
+    position: absolute;
+    background: #FFF8ED;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+
+.menu-bar ul li:hover .sub-menu-team {
+    display: block;
+    position: absolute;
+    background: #FFF8ED;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+
+.menu-bar ul li:hover .sub-menu-parts {
+    display: block;
+    position: absolute;
+    background: #FFF8ED;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+
+.menu-bar ul li:hover .sub-menu-humanpractices {
+    display: block;
+    position: absolute;
+    background: #FFF8ED;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+
+.menu-bar ul li:hover .sub-menu-project ul, .sub-menu-team ul, .sub-menu-parts ul, .sub-menu-humanpractices ul {
+    display: block;
+    margin: 10px;
+}
+
+
+header {
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+
+
+/* Hero Image */
+header .hero-image {
+    position: absolute;
+    width: 868px;
+    height: 773.11px;
+    left: -10px;
+    top: 90px;
+    padding: 50px;
+}
+
+/* Social Icons */
+
+.social-icons {
+    display: flex;
+    align-items: center
+}
+
+.social-icons a:nth-of-type(1) {
+    position: absolute;
+    width: 86px;
+    height: 86px;
+    left: 1275px;
+    top: 820px;
+}
+
+.social-icons a:nth-of-type(2) {
+    position: absolute;
+    width: 86px;
+    height: 86px;
+    left: 1175px;
+    top: 820px;
+}
+
+.social-icons a:nth-of-type(3) {
+    position: absolute;
+    width: 86px;
+    height: 86px;
+    left:1375px;
+    top: 820px;
+}
+
+/* Bacteria Bubble */
+
+.bacteria-bubble {
+    background-color: transparent;
+    position: absolute;
+    width: 330px;
+    height: 330px;
+    border-radius: 50%;
+    perspective: 1000px;
+    left: 1140px;
+    top: 120px;
+
+    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.3);
+}
+
+.flip-bacteria-bubble-inner {
+    position: relative;
+    width: 100%;
+    height:100%;
+    text-align: center;
+    transition: transform 250ms linear;
+    transform-style: preserve-3d;
+}
+
+.bacteria-bubble:hover .flip-bacteria-bubble-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-bacteria-bubble-front, .flip-batteria-bubble-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+}
+
+.flip-bacteria-bubble-back {
+    background-color: rgb(255, 241, 209);
+    color: black;
+    width: 330px;
+    height: 330px;
+    border-radius: 50%;
+    transform: rotateY(180deg);
+}
+
+/* Sunscreen Bubble */
+
+.sunscreen-bubble {
+    background-color: transparent;
+    position: absolute;
+    width: 330px;
+    height: 330px;
+    border-radius: 50%;
+    perspective: 1000px;
+    left: 1317px;
+    top: 430px;
+
+    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.3);
+}
+
+.flip-sunscreen-bubble-inner {
+    position: relative;
+    width: 100%;
+    height:100%;
+    text-align: center;
+    transition: transform 250ms linear;
+    transform-style: preserve-3d;
+}
+
+.sunscreen-bubble:hover .flip-sunscreen-bubble-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-sunscreen-bubble-front, .flip-sunscreen-bubble-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+}
+
+.flip-sunscreen-bubble-back {
+    background-color: rgb(255, 241, 209);
+    color: black;
+    width: 330px;
+    height: 330px;
+    border-radius: 50%;
+    transform: rotateY(180deg);
+}
+
+/* Coral Bubble */
+
+.coral-bubble {
+    background-color: transparent;
+    position: absolute;
+    width: 330px;
+    height: 330px;
+    border-radius: 50%;
+    perspective: 1000px;
+    left: 975px;
+    top: 430px;
+
+    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.3);
+}
+
+.flip-coral-bubble-inner {
+    position: relative;
+    width: 100%;
+    height:100%;
+    text-align: center;
+    transition: transform 250ms linear;
+    transform-style: preserve-3d;
+}
+
+.coral-bubble:hover .flip-coral-bubble-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-coral-bubble-front, .flip-coral-bubble-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+}
+
+.flip-coral-bubble-back {
+    background-color: rgb(255, 241, 209);
+    color: black;
+    width: 330px;
+    height: 330px;
+    border-radius: 50%;
+    transform: rotateY(180deg);
+}
+
+.intro {
+    position: absolute;
+    width: 540px;
+    height: 540px;
+    left: 140px;
+    top: 1010px;
+}
+
+.intro-paragraph {
+    position: absolute;
+    width: 802px;
+    height: 333px;
+    text-align: justify;
+    left: 570px;
+    top: 120px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 42px;
+    display: flex;
+    align-items: center;
+}
+
+.sunscreen-tab {
+    position: absolute;
+    width: 955px;
+    height: 1056px;
+    left: 361px;
+    top: 1680px;
+}
+
+.sunscreen-splash {
+    position: absolute;
+    width: 2624px;
+    height: 1661px;
+    top: 2490px;
+}
+
+.why-probiotic {
+    position: absolute;
+    width: 1553.79px;
+    height: 914.05px;
+    left: 62px;
+    top: 4100px;
+}
+
+.marine-group {
+    position: absolute;
+    width: 1618px;
+    height: 983px;
+    left: 22px;
+    top: 1680px;
+}
+
+.coral-group {
+    position: absolute;
+width: 2614.85px;
+height: 1818.58px;
+top: 900px;
+}
+
+.footer {
+    position: absolute;
+width: 2452.46px;
+height: 1207.91px;
+top: 5100px;
+}
+
+
+
+
+
+

@@ -1,0 +1,434 @@
+{{IGEM_TopBar}}
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" contnet="ie=edge" />
+        <title>Shinescreen:A Novel,Entirely Reef-Safe Probiotic Sunscreen.</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family:"Roboto", sans-serif;
+    background: #EAE0DA;
+}
+
+}
+
+/* Navigation */
+
+.nav-container {
+    height: 200px;
+    
+    background: #FFFBF5
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+}
+
+.wrapper {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 30px;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav .logo {
+    position: absolute;
+    width: 189px;
+    height: 144px;
+    left: 50px;
+    top: 50px;
+}
+
+.nav-items li {
+    list-style: none;
+    margin-right: 100px;
+}
+
+.nav-items li:nth-last-of-type(1) {
+    margin: 0;
+}
+
+.nav-items li a {
+    color: #000000;
+    font-size: 24px;
+    font-weight: 900;
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+}
+
+nav .igem-logo {
+    position: absolute;
+    width: 141px;
+    height: 110px;
+    left: 1480px;
+    top: 50px;
+}
+
+/* Header */
+
+.header-container {
+    background: #EAE0DA url('https://2020.igem.org/wiki/images/6/6b/T--St_Andrews--polygon.svg');
+    background-repeat: no-repeat;
+    background-position: right;
+    width: 1700;
+    height: 884;
+    display: flex;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+
+header .hero-header {
+    position: absolute;
+    font-weight: 900;
+    font-size: 96px;
+    line-height: 112px;
+    color: #050505;
+    margin-bottom: 24px;
+
+    position: absolute;
+    top: 54%;
+    left: 54%;
+    transform: translate(-50%, -50%);
+}
+
+header .hero-paragraph {
+    position: absolute;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 42px;
+    color: #050505;
+    width: 600px;
+
+    position: absolute;
+    top: 69%;
+    left: 58%;
+    transform: translate(-50%, -50%);
+}
+
+/* Hero Image */
+header .hero-image {
+    position: absolute;
+    width: 787px;
+    height: 701px;
+    left: 50px;
+    top: 160px;
+
+    padding: 50px;
+    transition: transform .3s; /* Animation */
+    margin: 0 auto;
+}
+
+header .hero-image:hover {
+    transform: scale(1.05);
+}
+
+
+/* Social Icons */
+
+.social-icons {
+    display: flex;
+    align-items: center
+}
+
+.social-icons a:nth-of-type(1) {
+    position: absolute;
+    width: 86px;
+    height: 86px;
+    left: 1396px;
+    top: 796px;
+}
+
+.social-icons a:nth-of-type(2) {
+    position: absolute;
+    width: 86px;
+    height: 86px;
+    left: 1296px;
+    top: 796px;
+}
+
+.social-icons a:nth-of-type(3) {
+    position: absolute;
+    width: 86px;
+    height: 86px;
+    left:1496px;
+    top: 796px;
+}
+
+/* Bacteria Bubble */
+
+.bacteria-bubble {
+    background-color: transparent;
+    position: absolute;
+    width: 330px;
+    height: 330px;
+    border-radius: 50%;
+    perspective: 1000px;
+    left: 947px;
+    top: 200px;
+
+    font-weight: 900;
+    font-family: "Roboto", sans-serif;
+
+    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.3);
+}
+
+.flip-bacteria-bubble-inner {
+    position: relative;
+    width: 100%;
+    height:100%;
+    text-align: center;
+    transition: transform 250ms linear;
+    transform-style: preserve-3d;
+}
+
+.bacteria-bubble:hover .flip-bacteria-bubble-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-bacteria-bubble-front, .flip-batteria-bubble-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+    font-weight: 900;
+    font-family: "Roboto", sans-serif;
+}
+
+.flip-bacteria-bubble-back {
+    background-color: rgb(255, 241, 209);
+    color: black;
+    width: 330px;
+    height: 330px;
+    border-radius: 50%;
+    transform: rotateY(180deg);
+}
+
+/* Sunscreen Bubble */
+
+.sunscreen-bubble {
+    background-color: transparent;
+    position: absolute;
+    width: 330px;
+    height: 330px;
+    border-radius: 50%;
+    perspective: 1000px;
+    left: 1245px;
+    top: 367px;
+    
+    font-weight: 900;
+    font-family: "Roboto", sans-serif;
+
+    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.3);
+}
+
+.flip-sunscreen-bubble-inner {
+    position: relative;
+    width: 100%;
+    height:100%;
+    text-align: center;
+    transition: transform 250ms linear;
+    transform-style: preserve-3d;
+}
+
+.sunscreen-bubble:hover .flip-sunscreen-bubble-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-sunscreen-bubble-front, .flip-sunscreen-bubble-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+}
+
+.flip-sunscreen-bubble-back {
+    background-color: rgb(255, 241, 209);
+    color: black;
+    width: 330px;
+    height: 330px;
+    border-radius: 50%;
+    transform: rotateY(180deg);
+}
+
+/* Coral Bubble */
+
+.coral-bubble {
+    background-color: transparent;
+    position: absolute;
+    width: 330px;
+    height: 330px;
+    border-radius: 50%;
+    perspective: 1000px;
+    left: 947px;
+    top: 572px;
+
+    font-weight: 900;
+    font-family: "Roboto", sans-serif;
+
+    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.3);
+}
+
+.flip-coral-bubble-inner {
+    position: relative;
+    width: 100%;
+    height:100%;
+    text-align: center;
+    transition: transform 250ms linear;
+    transform-style: preserve-3d;
+}
+
+.coral-bubble:hover .flip-coral-bubble-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-coral-bubble-front, .flip-coral-bubble-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+}
+
+.flip-coral-bubble-back {
+    background-color: rgb(255, 241, 209);
+    color: black;
+    width: 330px;
+    height: 330px;
+    border-radius: 50%;
+    transform: rotateY(180deg);
+}
+    </style>
+    <body>
+       <div class="nav-container">
+           <div class="wrapper">
+               <nav>
+                   <div class="logo">
+                       <img src="https://2020.igem.org/wiki/images/f/f7/T--St_Andrews--shinescreen_logo.svg" alt="Shinescreen Logo">
+                   </div>
+
+                   <ul class="nav-items">
+                    <li>
+                        <a href="#">Project</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Team</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Parts</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Human Practices</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Safety</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Judging Form</a>
+                    </li>
+                   </ul>
+
+                   <div class="igem-logo">
+                       <img src="https://2020.igem.org/wiki/images/6/67/T--St_Andrews--igem_logo.svg" alt="iGEM Logo">
+                   </div>
+               </nav>
+           </div>
+           
+           <div class="header-container">
+            <div class="wrapper">
+                
+                <header>
+                  
+                   <div class="hero-image">
+                        <img src="https://2020.igem.org/wiki/images/5/51/T--St_Andrews--hand_with_sunscreen.svg" alt="Hands holding sunscreen" />
+                        <div class="hero-header">Shinescreen</div>
+                        <div class="hero-paragraph">A Novel, Entirely Reef-Safe <br> Probiotic Sunscreen.</div> 
+                   </div>
+                   </div> 
+                </header>
+
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/st.andrews.igem">
+                        <img src="https://2020.igem.org/wiki/images/7/75/T--St_Andrews--icon_facebook.svg" alt="Facebook">
+                    </a>
+                    <a href="https://www.instagram.com/igem2020_st.andrews/">
+                        <img src="https://2020.igem.org/wiki/images/8/85/T--St_Andrews--icon_instagram.svg" alter="Instagram">
+                    </a>
+                    <a href="https://twitter.com/standrews20191?lang=en">
+                        <img src="https://2020.igem.org/wiki/images/3/33/T--St_Andrews--icon_twitter.svg" alter="Twitter">
+                    </a>
+                </div>
+
+
+                <div class="bacteria-bubble">
+                    <div class="flip-bacteria-bubble-inner">
+                        <div class="flip-bacteria-bubble-front">
+                            <img src="https://2020.igem.org/wiki/images/8/8b/T--St_Andrews--bacteria.svg" alt="Bacteria">
+                        </div>
+                        <div class="flip-bacteria-bubble-back">
+                            <h1 style="font-family:Roboto;"><br><br><br>Research and Design</h1>
+                            <p style="font-family:Roboto; text-align:center">Design a novel biobrick gene circuit and consider the composition of skin bacteria<br>to achieve a fine-tuned response by our “Shinescreen”.</p>
+                        </div>
+                    </div>
+                </div>
+                
+
+                <div class="sunscreen-bubble">
+                    <div class="flip-sunscreen-bubble-inner">
+                        <div class="flip-sunscreen-bubble-front">
+                            <img src="https://2020.igem.org/wiki/images/6/61/T--St_Andrews--heart_sunscreen.svg" alt="Heart-shaped Sunscreen">
+                        </div>
+                        <div class="flip-sunscreen-bubble-back">
+                            <h1 style="font-family:Roboto;"><br><br><br>Bacteria Sunscreen</h1>
+                            <p style="font-family:Roboto; text-align:center">Create the first truly sustainable and widely accessible sunscreen using the bacteria shinorine which actively secrete<br>mycosporine-like amino acids.</p>
+                        </div>
+                </div>
+                </div>
+                
+
+                <div class="coral-bubble">
+                    <div class="flip-coral-bubble-inner">
+                        <div class="flip-coral-bubble-front">
+                    <img src="https://2020.igem.org/wiki/images/9/94/T--St_Andrews--corals.svg" alt="Corals">
+                    </div>
+                    <div class="flip-coral-bubble-back">
+                        <h1 style="font-family:Roboto;"><br><br>Conserve and<br>Revitalise Coral Reefs</h1>
+                        <p style="font-family:Roboto; text-align:center">Oxybenzone and octinoxate<br>in chemical sunscreens cause<br>coral bleaching, impair polyp growth<br>and increase their susceptibility<br>to viruses.</p>
+                    </div>
+                </div>
+                </div>
+
+            </div>
+           </div>
+
+       </div> 
+    </body>
+</html>
