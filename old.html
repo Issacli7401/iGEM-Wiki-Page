@@ -1,112 +1,86 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
+{{St_Andrews/WikiStripDown}}
+{{St_Andrews/NavigationBar}}
+{{St_Andrews/HomeCSS}}
+<html>
+<div class="header-container">
+        <div class="wrapper">
 
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
+            <header>
 
-body {
-    background: linear-gradient(180deg, #EAE0DA 0%, rgba(255, 255, 255, 0) 82.81%, rgba(253, 252, 252, 0.091954) 99.99%, rgba(255, 255, 255, 0.00574713) 100%), #FFC8AC;
-    background-position: center;
-    width: auto;
-    height: 5600px;
-    font-family: "Roboto", sans-serif;
-    background-repeat: no-repeat;
-}
+                <div style="z-index: -1" class="hero-image">
+                    <img src="https://2020.igem.org/wiki/images/c/c1/T--St_Andrews--title_tab.svg" alt="Hands holding sunscreen" />
+                </div>
+        </div>
+        </header>
 
-.menu-bar {
-    background: #FFF8ED;
-    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.25);
-    border-radius: 30px;
-    text-align: center;
-}
-
-.menu-bar ul {
-    display: inline-flex;
-    list-style: none;
-    color: #000000;
-}
-
-.menu-bar ul li {
-    width: 180px;
-    margin: 21px;
-    padding: 15px;
-}
-
-.menu-bar ul li a {
-    text-decoration: none;
-    color: #000000;
-}
-
-.menu-bar ul li:hover {
-    background: #FFC8AC;
-    border-radius: 20px;
-}
-
-.menu-bar .fa {
-    margin-right: 8px;
-}
-
-.sub-menu-project, .sub-menu-team, .sub-menu-parts, .sub-menu-humanpractices {
-    display: none;
-}
-
-.menu-bar ul li:hover .sub-menu-project {
-    display: block;
-    position: absolute;
-    background: #FFF8ED;
-    margin-top: 15px;
-    margin-left: -15px;
-}
-
-.menu-bar ul li:hover .sub-menu-team {
-    display: block;
-    position: absolute;
-    background: #FFF8ED;
-    margin-top: 15px;
-    margin-left: -15px;
-}
-
-.menu-bar ul li:hover .sub-menu-parts {
-    display: block;
-    position: absolute;
-    background: #FFF8ED;
-    margin-top: 15px;
-    margin-left: -15px;
-}
-
-.menu-bar ul li:hover .sub-menu-humanpractices {
-    display: block;
-    position: absolute;
-    background: #FFF8ED;
-    margin-top: 15px;
-    margin-left: -15px;
-}
-
-.menu-bar ul li:hover .sub-menu-project ul, .sub-menu-team ul, .sub-menu-parts ul, .sub-menu-humanpractices ul {
-    display: block;
-    margin: 10px;
-}
+        <div class="social-icons">
+            <a href="https://www.facebook.com/st.andrews.igem">
+                <img src="https://2020.igem.org/wiki/images/7/75/T--St_Andrews--icon_facebook.svg" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com/igem2020_st.andrews/">
+                <img src="https://2020.igem.org/wiki/images/8/85/T--St_Andrews--icon_instagram.svg" alter="Instagram">
+            </a>
+            <a href="https://www.linkedin.com/company/shinescreen/">
+                <img src="https://2020.igem.org/wiki/images/6/6a/T--St_Andrews--icon_linkedin.svg" alter="LinkedIn">
+            </a>
+        </div>
 
 
-header {
-    display: flex;
-    align-items:center;
-    justify-content: space-between;
-}
+        <div class="bacteria-bubble">
+            <div class="flip-bacteria-bubble-inner">
+                <div class="flip-bacteria-bubble-front">
+                    <img src="https://2020.igem.org/wiki/images/f/ff/T--St_Andrews--bacteria_bubble.svg" alt="Bacteria">
+                </div>
+                <div class="flip-bacteria-bubble-back">
+                    <h1><br><br><br>Research and Design</h1>
+                    <p><br>Design a novel biobrick gene circuit and consider the composition of skin bacteria to achieve
+                        a fine-tuned response by our “Shinescreen”.</p>
+                </div>
+            </div>
+        </div>
 
 
-/* Hero Image */
-header .hero-image {
-    position: absolute;
-    width: 868px;
-    height: 773.11px;
-    left: -10px;
-    top: 90px;
-    padding: 50px;
-}
+        <div class="sunscreen-bubble">
+            <div class="flip-sunscreen-bubble-inner">
+                <div class="flip-sunscreen-bubble-front">
+                    <img src="https://2020.igem.org/wiki/images/6/61/T--St_Andrews--heart_sunscreen.svg" alt="Heart-shaped Sunscreen">
+                </div>
+                <div class="flip-sunscreen-bubble-back">
+                    <h1><br><br>Probiotic<br>Sunscreen</h1>
+                    <p><br>We aim to create a smart sunscreen which uses bacteria as a source of sustainable and
+                        affordable UV protection.</p>
+                </div>
+            </div>
+        </div>
 
+
+        <div class="coral-bubble">
+            <div class="flip-coral-bubble-inner">
+                <div class="flip-coral-bubble-front">
+                    <img src="https://2020.igem.org/wiki/images/9/94/T--St_Andrews--corals.svg" alt="Corals">
+                </div>
+                <div class="flip-coral-bubble-back">
+                    <h1><br>Conserve<br>and Revitalise<br>Coral Reefs</h1>
+                    <p><br>Oxybenzone and octinoxate in chemical sunscreens cause coral bleaching, impair polyp growth
+                        and increase their<br>susceptibility to viruses.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="intro">
+        <img src="https://2020.igem.org/wiki/images/a/af/T--St_Andrews--s_logo.svg" alt="Shinescreen S logo" />
+        <div class="intro-paragraph">Hello! We are the St Andrews iGEM team of 2020. Our project Shinescreen focuses on engineering a novel and sustainable sunscreen using synthetic biology. We are taking the first steps to design a bacterial sunscreen which offers long term protection and is entirely coral friendly!</div>
+    </div>
+
+<html>
+
+
+<!--css-->
+
+<html>
+
+<style>
 /* Social Icons */
 
 .social-icons {
@@ -298,53 +272,7 @@ header .hero-image {
     align-items: center;
 }
 
-.sunscreen-tab {
-    position: absolute;
-    width: 955px;
-    height: 1056px;
-    left: 361px;
-    top: 1680px;
-}
-
-.sunscreen-splash {
-    position: absolute;
-    width: 2624px;
-    height: 1661px;
-    top: 2490px;
-}
-
-.why-probiotic {
-    position: absolute;
-    width: 1553.79px;
-    height: 914.05px;
-    left: 62px;
-    top: 4100px;
-}
-
-.marine-group {
-    position: absolute;
-    width: 1618px;
-    height: 983px;
-    left: 22px;
-    top: 1680px;
-}
-
-.coral-group {
-    position: absolute;
-width: 2614.85px;
-height: 1818.58px;
-top: 900px;
-}
-
-.footer {
-    position: absolute;
-width: 2452.46px;
-height: 1207.91px;
-top: 5100px;
-}
-
-
-
-
-
-
+.home-page {
+top: 200px;
+</style>
+</html>
